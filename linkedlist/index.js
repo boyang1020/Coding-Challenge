@@ -11,7 +11,7 @@ class Node {
 
 class LinkedList {
     constructor() {
-        this.head = nell;
+        this.head = null;
     }
 }
 

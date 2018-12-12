@@ -63,7 +63,11 @@ class LinkedList {
         if (!this.head) {
             return;
         }
-        
+        if (!this.head.next) {
+            this.head = null;
+            return;
+        }
+
 
     }
 }

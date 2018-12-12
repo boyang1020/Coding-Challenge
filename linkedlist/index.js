@@ -20,4 +20,10 @@ class LinkedList {
     }
 }
 
+// const nodeOne = new Node(5);
+// const list = new LinkedList();
+// list.head = nodeOne;
+// list.insertFirst(15);
+// list 
+
 module.exports = { Node, LinkedList };

@@ -28,6 +28,10 @@ class LinkedList {
             node = node.next;
         }
     }
+
+    getFirst () {
+        return this.head;
+    }
 }
 
 // const nodeOne = new Node(5);

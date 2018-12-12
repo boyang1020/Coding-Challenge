@@ -46,6 +46,10 @@ class LinkedList {
              node = node.next;
          }
     }
+
+    clear() {
+        this.head = null;
+    }
 }
 
 // const nodeOne = new Node(5);

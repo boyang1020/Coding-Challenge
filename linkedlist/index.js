@@ -50,6 +50,14 @@ class LinkedList {
     clear() {
         this.head = null;
     }
+
+    removeFirst() {
+       if (!this.head) {
+           return;
+       }
+
+       this.head = this.head.next;
+    }
 }
 
 // const nodeOne = new Node(5);

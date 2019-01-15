@@ -91,9 +91,23 @@ class LinkedList {
 
         }
     }
+
+    getAt(index) {
+        let counter = 0;
+        let node = this.head;
+        while (node) {
+            if (counter === index) {
+                return node;
+            }
+
+            counter++;
+            node = node.next;
+        }
+        return null;
+    }
 }
 
-// const nodeOne = new Node(5);
+// const nodeOne = new Node(5); 
 // const list = new LinkedList();
 // list.head = nodeOne;
 // list.insertFirst(15);

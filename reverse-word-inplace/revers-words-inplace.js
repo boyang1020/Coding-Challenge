@@ -3,7 +3,7 @@ function reverseWords(message) {
     reverseChar(message, 0, message.length - 1);
     
     let currentWordStartIndex = 0;
-    for(i = 0; i < message.length; i++) {
+    for(let i = 0; i < message.length; i++) {
       if(i === message.length || message[i] === ' ') {
         reverseChar(message, currentWordStartIndex, i - 1);
         currentWordStartIndex = i + 1;

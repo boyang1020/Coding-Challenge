@@ -1,3 +1,5 @@
+//credit to interview cake
+
 function mergeArrays(myArray, alicesArray) {
     const meragedArray = [];
     let currentMeragedArrayIndex = 0;

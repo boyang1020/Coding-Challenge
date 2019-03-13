@@ -1,3 +1,5 @@
+// credit to interview cake
+
 function isSingleRiffle(half1, half2, shuffledDeck) {
     var half1Index = 0;
     var half2Index = 0;

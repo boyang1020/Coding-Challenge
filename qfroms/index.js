@@ -16,8 +16,8 @@ const Stack = require('./stack');
 
 class Queue {
     constructor() {
-        this.first = new Stack();
-        this.second = new Stack();
+        this.first = new Stack;
+        this.second = new Stack;
     }
 
     add(record) {
@@ -30,14 +30,12 @@ class Queue {
         }
 
         const record = this.second.pop();
-
         while(this.second.peek()) {
             this.first.push(this.second.pop());
         }
-
         return record;
     }
-
+    
     peek() {
         while(this.first.peek()) {
             this.second.push(this.first.pop());
@@ -45,10 +43,9 @@ class Queue {
 
         const record = this.second.peek();
 
-        while (this.second.peek()) {
+        while(this.second.peek()) {
             this.first.push(this.second.pop());
         }
-        
         return record;
     }
 }

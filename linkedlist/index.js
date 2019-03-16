@@ -121,7 +121,10 @@ class LinkedList {
             return;
         }
         previous.next = previous.next.next;
+    }
 
+    insertAt(data) {
+        
     }
 }
 

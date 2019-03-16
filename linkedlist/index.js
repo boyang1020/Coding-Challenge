@@ -123,8 +123,11 @@ class LinkedList {
         previous.next = previous.next.next;
     }
 
-    insertAt(data) {
-        
+    insertAt(data, index) {
+        if(!this.head) {
+            this.head = new Node(data);
+            return;
+        }
     }
 }
 

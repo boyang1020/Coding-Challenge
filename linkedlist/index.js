@@ -128,6 +128,13 @@ class LinkedList {
             this.head = new Node(data);
             return;
         }
+        if(index === 0) {
+            this.head = new Node(data, this.head);
+            return;
+        }
+        const pre = this.getAt(index - 1) || getLast();
+        const node = new Node(data, pre.next);
+        pre.next = node;
     }
 }
 

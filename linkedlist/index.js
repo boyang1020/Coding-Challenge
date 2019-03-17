@@ -136,7 +136,7 @@ class LinkedList {
         const node = new Node(data, pre.next);
         pre.next = node;
     }
-    
+
     forEach(fn) {
         let node = this.head;
         let counter = 0;
@@ -146,6 +146,16 @@ class LinkedList {
             counter++;
         }
     }
+
+    *[Symbol.interator]() {
+        let node = this.head;
+        while(node) {
+            yield node;
+            node = node.next;
+        }
+        
+    }
+
 }
 
 // const nodeOne = new Node(5); 
